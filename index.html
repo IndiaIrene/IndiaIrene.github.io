@@ -42,7 +42,6 @@
     .hero h1 {
       font-size: 50px;
       color: #58a6ff;
-      margin-bottom: 10px;
     }
 
     .hero p {
@@ -63,69 +62,57 @@
       font-weight: bold;
     }
 
-    .btn:hover {
-      background: #7bb8ff;
-    }
-
-    /* PREMIUM BADGE STRIP */
-    .badge-strip {
-      margin-top: 28px;
+    /* =========================
+       FLAT ICON ROW (NO OVALS)
+    ========================== */
+    .icon-strip {
+      margin-top: 30px;
       display: flex;
       justify-content: center;
-      gap: 12px;
+      gap: 40px;
       flex-wrap: wrap;
     }
 
-    .badge {
+    .icon-item {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      gap: 8px;
-      padding: 8px 14px;
+      font-size: 13px;
+      color: #aab4c0;
+    }
+
+    .icon-box {
+      width: 62px;
+      height: 62px;
       background: #161b22;
       border: 1px solid #2a3442;
-      border-radius: 999px;
-      font-size: 13px;
-      color: #e6edf3;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .dot-icon {
-      width: 10px;
-      height: 10px;
-      border-radius: 3px;
-      background: #58a6ff;
+    .icon-box img {
+      width: 34px;
+      height: 34px;
+      object-fit: contain;
     }
 
-    .shield-icon {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: #58a6ff;
-    }
-
-    /* SPLUNK = DASHBOARD GRID (FIXED, NO IMAGES) */
-    .dashboard-icon {
+    /* ISO FRAMEWORK (flat grid) */
+    .iso-box {
+      width: 62px;
+      height: 62px;
+      background: #161b22;
+      border: 1px solid #2a3442;
+      border-radius: 10px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
+      gap: 3px;
+      padding: 10px;
+      box-sizing: border-box;
     }
 
-    .dashboard-icon div {
-      width: 6px;
-      height: 6px;
-      background: #58a6ff;
-      border-radius: 2px;
-    }
-
-    /* ISO FRAMEWORK */
-    .iso-icon {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2px;
-    }
-
-    .iso-icon div {
-      width: 6px;
-      height: 6px;
+    .iso-box div {
       background: #58a6ff;
       border-radius: 2px;
     }
@@ -186,44 +173,55 @@
     Connect on LinkedIn
   </a>
 
-  <div class="badge-strip">
+  <div class="icon-strip">
 
-    <div class="badge">
-      <div class="dot-icon"></div>
-      GRC Strategy
+    <!-- GRC -->
+    <div class="icon-item">
+      <div class="icon-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png">
+      </div>
+      <span>GRC</span>
     </div>
 
-    <div class="badge">
-      <div class="shield-icon"></div>
-      Security+
+    <!-- SECURITY+ FIXED (VISIBLE SHIELD ICON) -->
+    <div class="icon-item">
+      <div class="icon-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
+      </div>
+      <span>Security+</span>
     </div>
 
-    <!-- FIXED SPLUNK -->
-    <div class="badge">
-      <div class="dashboard-icon">
+    <!-- SPLUNK (ANALYTICS / DASHBOARD) -->
+    <div class="icon-item">
+      <div class="icon-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828880.png">
+      </div>
+      <span>Splunk</span>
+    </div>
+
+    <!-- NETWORKING -->
+    <div class="icon-item">
+      <div class="icon-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png">
+      </div>
+      <span>Networking</span>
+    </div>
+
+    <!-- NIST -->
+    <div class="icon-item">
+      <div class="icon-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+      </div>
+      <span>NIST</span>
+    </div>
+
+    <!-- ISO 27001 -->
+    <div class="icon-item">
+      <div class="iso-box">
         <div></div><div></div>
         <div></div><div></div>
       </div>
-      Splunk SIEM
-    </div>
-
-    <div class="badge">
-      <div class="dot-icon"></div>
-      Networking
-    </div>
-
-    <div class="badge">
-      <div class="dot-icon"></div>
-      NIST
-    </div>
-
-    <!-- ISO -->
-    <div class="badge">
-      <div class="iso-icon">
-        <div></div><div></div>
-        <div></div><div></div>
-      </div>
-      ISO 27001
+      <span>ISO 27001</span>
     </div>
 
   </div>
@@ -231,13 +229,15 @@
 
 <section id="about">
   <h2>About</h2>
+
   <p>
-    10+ years of business strategy experience with compliance oversight, gap analysis, and structured action planning applied to operational risk reduction.
+    I bring over 10+ years of experience in business strategy, with hands-on responsibility for maintaining compliance, identifying gaps, and developing structured action plans for risk reduction.
   </p>
 </section>
 
 <section id="focus">
   <h2>Core Focus Areas</h2>
+
   <div class="grid">
     <div class="card"><h3>GRC</h3></div>
     <div class="card"><h3>Security Operations</h3></div>
@@ -260,12 +260,13 @@
     <div class="card">Google AI Essentials</div>
     <div class="card">Network Defense</div>
     <div class="card">Networking Basics</div>
-    <div class="card">Operating Systems</div>
+    <div class="card">Operating Systems Basics</div>
   </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
+
   <div class="grid">
     <div class="card">
       <h3>Packet Tracer Labs</h3>
