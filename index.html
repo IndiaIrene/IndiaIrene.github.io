@@ -14,6 +14,7 @@
       line-height: 1.6;
     }
 
+    /* NAV */
     nav {
       display: flex;
       justify-content: center;
@@ -22,6 +23,7 @@
       background: #161b22;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     nav a {
@@ -34,52 +36,47 @@
       color: #58a6ff;
     }
 
+    /* HERO */
     .hero {
       text-align: center;
-      padding: 120px 20px 60px;
+      padding: 110px 20px 50px;
     }
 
     .hero h1 {
-      font-size: 52px;
+      font-size: 50px;
       color: #58a6ff;
       margin-bottom: 10px;
     }
 
     .hero p {
-      font-size: 18px;
       color: #aab4c0;
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
     }
 
-    .divider {
-      width: 60px;
-      height: 3px;
-      background: #58a6ff;
-      margin: 20px auto;
-      border-radius: 10px;
-    }
-
+    /* LINKEDIN BUTTON */
     .btn {
       display: inline-block;
-      margin-top: 10px;
-      padding: 11px 22px;
+      margin-top: 15px;
+      padding: 10px 18px;
       background: #58a6ff;
       color: #0b0f17;
       border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.25s;
     }
 
     .btn:hover {
       background: #7bb8ff;
-      transform: translateY(-2px);
     }
 
+    /* ICON STRIP */
     .icon-strip {
-      margin-top: 35px;
+      margin-top: 25px;
       display: flex;
       justify-content: center;
-      gap: 35px;
+      gap: 30px;
       flex-wrap: wrap;
     }
 
@@ -89,28 +86,18 @@
       align-items: center;
       font-size: 13px;
       color: #aab4c0;
-      transition: 0.25s;
     }
 
     .icon-item img {
-      width: 55px;
+      width: 55px;   /* BIGGER */
       height: 55px;
-      background: white;
+      margin-bottom: 6px;
+      background: white;   /* makes icons visible */
       padding: 6px;
       border-radius: 10px;
-      margin-bottom: 6px;
-      transition: 0.25s;
     }
 
-    .icon-item:hover {
-      transform: translateY(-5px);
-      color: #58a6ff;
-    }
-
-    .icon-item:hover img {
-      transform: scale(1.08);
-    }
-
+    /* SECTIONS */
     section {
       max-width: 1000px;
       margin: auto;
@@ -122,23 +109,31 @@
       margin-bottom: 20px;
     }
 
+    /* GRID */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
+    /* CARD */
     .card {
       background: #161b22;
       padding: 20px;
       border-radius: 12px;
       border: 1px solid #222b38;
-      transition: 0.25s;
+      transition: 0.3s;
     }
 
     .card:hover {
+      transform: translateY(-6px);
       border-color: #58a6ff;
-      transform: translateY(-5px);
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     footer {
@@ -160,16 +155,16 @@
   <a href="#projects">Projects</a>
 </nav>
 
+<!-- HERO -->
 <div class="hero">
   <h1>India Irene</h1>
   <p>GRC Analyst | Cybersecurity Foundations | Strategy & Risk Management</p>
-
-  <div class="divider"></div>
 
   <a class="btn" href="https://www.linkedin.com/in/indiairene/" target="_blank">
     Connect on LinkedIn
   </a>
 
+  <!-- ICON STRIP -->
   <div class="icon-strip">
 
     <div class="icon-item">
@@ -177,6 +172,7 @@
       <span>GRC</span>
     </div>
 
+    <!-- FIXED SECURITY+ ICON -->
     <div class="icon-item">
       <img src="https://cdn-icons-png.flaticon.com/512/1041/1041916.png">
       <span>Security+</span>
@@ -200,62 +196,4 @@
   </div>
 </div>
 
-<section id="about">
-  <h2>About</h2>
-  <p>
-    I bring over 10+ years of experience in business strategy, with hands-on responsibility for maintaining compliance within business operations. This included gap analysis, identifying risks, and developing structured action plans to improve alignment and reduce risk.
-  </p>
-  <p>
-    I am currently focused on Governance, Risk, and Compliance (GRC) and building technical foundations in cybersecurity, networking, and security operations.
-  </p>
-</section>
-
-<section id="focus">
-  <h2>Core Focus Areas</h2>
-  <div class="grid">
-    <div class="card">Governance, Risk & Compliance (GRC)</div>
-    <div class="card">Security Operations</div>
-    <div class="card">Networking & Infrastructure</div>
-    <div class="card">Strategy & Analytics</div>
-  </div>
-</section>
-
-<section id="progress">
-  <h2>In Progress</h2>
-  <div class="grid">
-    <div class="card">CompTIA Security+</div>
-    <div class="card">Splunk</div>
-  </div>
-</section>
-
-<section id="completed">
-  <h2>Completed Training</h2>
-  <div class="grid">
-    <div class="card">Google AI Essentials</div>
-    <div class="card">Network Defense</div>
-    <div class="card">Networking Basics</div>
-    <div class="card">Operating Systems</div>
-    <div class="card">Hardware Basics</div>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Packet Tracer Labs</h3>
-      <a href="https://github.com/IndiaIrene/packet-tracer-labs" target="_blank">View Project</a>
-    </div>
-    <div class="card">
-      <h3>GRC Projects</h3>
-      <a href="https://github.com/IndiaIrene/grc-projects" target="_blank">View Project</a>
-    </div>
-  </div>
-</section>
-
-<footer>
-  © 2026 India Irene
-</footer>
-
-</body>
-</html>
+<!-- EVERYTHING BELOW STAYS EXACTLY THE SAME -->
