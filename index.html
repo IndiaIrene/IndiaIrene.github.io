@@ -22,6 +22,7 @@
       background: #161b22;
       position: sticky;
       top: 0;
+      z-index: 1000;
     }
 
     nav a {
@@ -67,7 +68,6 @@
       background: #7bb8ff;
     }
 
-    /* ICON ROW */
     .icon-strip {
       margin-top: 25px;
       display: flex;
@@ -84,8 +84,7 @@
       color: #aab4c0;
     }
 
-    /* UNIFIED ICON SIZE (THIS FIXES YOUR ISO ISSUE) */
-    .icon-box {
+    .icon-box, .iso-box {
       width: 60px;
       height: 60px;
       background: white;
@@ -102,18 +101,9 @@
       object-fit: contain;
     }
 
-    /* ISO FRAMEWORK ICON (NOW SAME SIZE AS OTHERS) */
     .iso-box {
-      width: 60px;
-      height: 60px;
-      background: white;
-      border-radius: 10px;
-      display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       gap: 4px;
-      margin-bottom: 6px;
     }
 
     .line {
@@ -182,7 +172,6 @@
 
   <div class="icon-strip">
 
-    <!-- GRC -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/4712/4712027.png">
@@ -190,7 +179,6 @@
       <span>GRC</span>
     </div>
 
-    <!-- SECURITY+ → LOCK ICON (clean GRC/security look) -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
@@ -198,7 +186,6 @@
       <span>Security+</span>
     </div>
 
-    <!-- SPLUNK → ANALYTICS / DASHBOARD ICON -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png">
@@ -206,7 +193,6 @@
       <span>Splunk</span>
     </div>
 
-    <!-- NETWORKING -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/2092/2092663.png">
@@ -214,7 +200,6 @@
       <span>Networking</span>
     </div>
 
-    <!-- NIST -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/942/942748.png">
@@ -222,7 +207,6 @@
       <span>NIST</span>
     </div>
 
-    <!-- ISO 27001 FRAMEWORK (NOW SAME SIZE AS OTHERS) -->
     <div class="icon-item">
       <div class="iso-box">
         <div class="line"></div>
@@ -280,7 +264,6 @@
 
 <section id="progress">
   <h2>In Progress</h2>
-
   <div class="grid">
     <div class="card"><h3>CompTIA Security+</h3></div>
     <div class="card"><h3>Splunk</h3></div>
@@ -289,7 +272,6 @@
 
 <section id="completed">
   <h2>Completed Training</h2>
-
   <div class="grid">
     <div class="card">Google AI Essentials</div>
     <div class="card">Engaging Stakeholders</div>
@@ -303,7 +285,6 @@
 
 <section id="projects">
   <h2>Projects</h2>
-
   <div class="grid">
     <div class="card">
       <h3>Packet Tracer Labs</h3>
