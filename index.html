@@ -22,7 +22,6 @@
       background: #161b22;
       position: sticky;
       top: 0;
-      z-index: 1000;
     }
 
     nav a {
@@ -84,7 +83,7 @@
       color: #aab4c0;
     }
 
-    .icon-box, .iso-box {
+    .icon-box {
       width: 60px;
       height: 60px;
       background: white;
@@ -101,9 +100,18 @@
       object-fit: contain;
     }
 
+    /* ISO FRAMEWORK TILE */
     .iso-box {
+      width: 60px;
+      height: 60px;
+      background: white;
+      border-radius: 10px;
+      display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       gap: 4px;
+      margin-bottom: 6px;
     }
 
     .line {
@@ -179,6 +187,7 @@
       <span>GRC</span>
     </div>
 
+    <!-- SECURITY+ (UNCHANGED) -->
     <div class="icon-item">
       <div class="icon-box">
         <img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png">
@@ -186,9 +195,10 @@
       <span>Security+</span>
     </div>
 
+    <!-- SPLUNK FIXED (DASHBOARD / ANALYTICS ICON) -->
     <div class="icon-item">
       <div class="icon-box">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828805.png">
       </div>
       <span>Splunk</span>
     </div>
@@ -207,6 +217,7 @@
       <span>NIST</span>
     </div>
 
+    <!-- ISO FRAMEWORK (UNCHANGED STYLE) -->
     <div class="icon-item">
       <div class="iso-box">
         <div class="line"></div>
@@ -232,7 +243,7 @@
   </p>
 
   <p>
-    I am currently building technical foundations in cybersecurity, networking, and security operations to strengthen my ability to connect business strategy with technical risk and security implementation.
+    I am currently building technical foundations in cybersecurity, networking, and security operations.
   </p>
 </section>
 
@@ -242,22 +253,22 @@
   <div class="grid">
     <div class="card">
       <h3>Governance, Risk & Compliance (GRC)</h3>
-      <p>Risk analysis, compliance frameworks, and policy structure (NIST, ISO concepts).</p>
+      <p>Risk analysis, compliance frameworks (NIST, ISO).</p>
     </div>
 
     <div class="card">
       <h3>Security Operations</h3>
-      <p>Cybersecurity fundamentals, monitoring, and SIEM awareness (Splunk).</p>
+      <p>Monitoring, SIEM tools, incident awareness.</p>
     </div>
 
     <div class="card">
       <h3>Networking & Infrastructure</h3>
-      <p>Subnetting, routing, VLANs, Packet Tracer labs.</p>
+      <p>Subnetting, VLANs, Packet Tracer labs.</p>
     </div>
 
     <div class="card">
       <h3>Strategy & Analytics</h3>
-      <p>Business strategy, stakeholder alignment, structured analysis, reporting.</p>
+      <p>Business strategy, reporting, gap analysis.</p>
     </div>
   </div>
 </section>
