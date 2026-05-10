@@ -3,8 +3,9 @@
 <head>
   <title>India Irene | GRC & Cybersecurity</title>
 
-  <!-- Google Font -->
+  <!-- Fonts + Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7a9c7b8f1a.js" crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -12,52 +13,56 @@
       font-family: 'Inter', sans-serif;
       background: #0b0f17;
       color: #e6edf3;
-    }
-
-    /* HERO */
-    .hero {
-      text-align: center;
-      padding: 120px 20px 80px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      color: #58a6ff;
-    }
-
-    .hero p {
-      font-size: 18px;
-      color: #aab4c0;
-      max-width: 600px;
-      margin: auto;
+      line-height: 1.6;
     }
 
     /* NAV */
     nav {
+      position: sticky;
+      top: 0;
+      background: rgba(22, 27, 34, 0.8);
+      backdrop-filter: blur(10px);
       display: flex;
       justify-content: center;
       gap: 30px;
-      padding: 20px;
-      background: rgba(22, 27, 34, 0.8);
-      backdrop-filter: blur(10px);
-      position: sticky;
-      top: 0;
+      padding: 15px;
+      z-index: 1000;
     }
 
     nav a {
       color: #e6edf3;
       text-decoration: none;
       font-size: 14px;
+      transition: 0.2s;
     }
 
     nav a:hover {
       color: #58a6ff;
     }
 
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+      color: #58a6ff;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #aab4c0;
+      font-size: 18px;
+    }
+
     /* SECTIONS */
     section {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
     }
@@ -65,37 +70,63 @@
     h2 {
       color: #58a6ff;
       margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
 
-    /* CARDS */
+    /* GRID */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
     }
 
+    /* CARD */
     .card {
       background: #161b22;
       padding: 20px;
       border-radius: 14px;
-      transition: 0.3s ease;
       border: 1px solid #222b38;
+      transition: 0.3s ease;
     }
 
     .card:hover {
-      transform: translateY(-6px);
+      transform: translateY(-8px);
       border-color: #58a6ff;
+      box-shadow: 0 10px 25px rgba(88,166,255,0.1);
     }
 
-    a {
-      color: #58a6ff;
+    /* BUTTON */
+    .btn {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 14px;
+      background: #58a6ff;
+      color: #0b0f17;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
     }
 
+    .btn:hover {
+      background: #1f6feb;
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 40px;
       color: #7d8590;
       font-size: 13px;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -104,49 +135,77 @@
 
 <nav>
   <a href="#about">About</a>
+  <a href="#inprogress">In Progress</a>
+  <a href="#completed">Completed</a>
   <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
   <h1>India Irene</h1>
-  <p>Focused on GRC, building foundational cybersecurity and risk management skills through hands-on projects and real-world frameworks.</p>
+  <p>GRC | Cybersecurity | Risk Management | Strategy & Implementation</p>
 </div>
 
 <section id="about">
-  <h2>About</h2>
+  <h2><i class="fas fa-user-shield"></i> About</h2>
   <p>
-    I am developing skills in Governance, Risk, and Compliance (GRC), while strengthening my understanding of cybersecurity fundamentals, networking, and risk analysis.
+    I am focused on Governance, Risk, and Compliance (GRC), while developing and applying foundational cybersecurity and risk management skills through hands-on learning and structured frameworks.
   </p>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
+<section id="inprogress">
+  <h2><i class="fas fa-spinner"></i> In Progress</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>GRC Projects</h3>
-      <p>Risk assessments, policy creation, and compliance mapping (NIST, ISO).</p>
+      <h3>Security+</h3>
+      <p>Building foundational cybersecurity knowledge aligned with CompTIA Security+.</p>
     </div>
 
     <div class="card">
-      <h3>Packet Tracer Labs</h3>
-      <p>Network simulations including VLANs, routing, and subnetting exercises.</p>
-    </div>
-
-    <div class="card">
-      <h3>Security Foundations</h3>
-      <p>Hands-on cybersecurity concepts and foundational controls.</p>
+      <h3>Splunk</h3>
+      <p>Learning SIEM monitoring, log analysis, and security event detection.</p>
     </div>
 
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@email.com</p>
-  <p>GitHub: <a href="https://github.com/IndiaIrene">Profile</a></p>
+<section id="completed">
+  <h2><i class="fas fa-check-circle"></i> Completed</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Google AI Essentials</h3>
+      <p>Completed foundational training in AI concepts and responsible usage.</p>
+    </div>
+
+    <div class="card">
+      <h3>Engaging Stakeholders</h3>
+      <p>Training focused on communication and stakeholder collaboration.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2><i class="fas fa-folder-open"></i> Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Packet Tracer Labs</h3>
+      <p>Network simulations including VLANs, routing, and subnetting.</p>
+      <a class="btn" href="https://github.com/IndiaIrene/packet-tracer-labs" target="_blank">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>GRC Projects</h3>
+      <p>Risk assessments, policy creation, and compliance mapping.</p>
+      <a class="btn" href="https://github.com/IndiaIrene/grc-projects" target="_blank">View Project</a>
+    </div>
+
+  </div>
 </section>
 
 <footer>
