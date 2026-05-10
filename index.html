@@ -9,34 +9,66 @@
       font-family: Arial, sans-serif;
       background: #0d1117;
       color: #e6edf3;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #161b22;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      gap: 30px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: #58a6ff;
     }
 
     header {
-      padding: 60px 30px;
       text-align: center;
-      background: #161b22;
+      padding-top: 120px;
+      padding-bottom: 60px;
     }
 
-    h1 {
-      color: #58a6ff;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #58a6ff;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
+    /* PROJECT GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
     }
 
     .card {
       background: #161b22;
       padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #1f2937;
     }
 
     a {
@@ -47,37 +79,73 @@
     a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #161b22;
+      margin-top: 50px;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HEADER -->
 <header>
   <h1>India Irene</h1>
-  <p>I’m currently focused on GRC, while developing and applying foundational cybersecurity and risk management skills.</p>
+  <p>GRC | Cybersecurity | Risk Management</p>
 </header>
 
-<div class="container">
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I’m currently focused on GRC, while developing and applying foundational cybersecurity and risk management skills.
+  </p>
+</section>
 
-  <div class="card">
-    <h2>🔐 GRC Projects</h2>
-    <p>Risk assessments, policy development, and compliance frameworks (NIST, ISO).</p>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>GRC Projects</h3>
+      <p>Risk assessments, compliance frameworks, and policy development.</p>
+    </div>
+
+    <div class="card">
+      <h3>Packet Tracer Labs</h3>
+      <p>Networking labs including VLANs, routing, and subnetting.</p>
+    </div>
+
+    <div class="card">
+      <h3>Security Foundations</h3>
+      <p>Building understanding of cybersecurity principles and controls.</p>
+    </div>
+
   </div>
+</section>
 
-  <div class="card">
-    <h2>🌐 Networking Labs</h2>
-    <p>Cisco Packet Tracer labs including VLANs, routing, and subnetting.</p>
-  </div>
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: yourname@email.com</p>
+  <p>GitHub: <a href="https://github.com/IndiaIrene">Profile</a></p>
+</section>
 
-  <div class="card">
-    <h2>📂 Projects</h2>
-    <p>
-      <a href="https://github.com/IndiaIrene/packet-tracer-labs">Packet Tracer Labs</a><br>
-      <a href="https://github.com/IndiaIrene/grc-projects">GRC Projects</a>
-    </p>
-  </div>
-
-</div>
+<footer>
+  © 2026 India Irene | GRC & Cybersecurity Portfolio
+</footer>
 
 </body>
 </html>
