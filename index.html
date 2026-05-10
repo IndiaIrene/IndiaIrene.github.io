@@ -11,6 +11,7 @@
       font-family: Arial, sans-serif;
       background: #0b0f17;
       color: #e6edf3;
+      line-height: 1.6;
     }
 
     nav {
@@ -24,7 +25,7 @@
     }
 
     nav a {
-      color: #e6edf3;
+      color: white;
       text-decoration: none;
       font-size: 14px;
     }
@@ -33,7 +34,6 @@
       color: #58a6ff;
     }
 
-    /* HERO */
     .hero {
       text-align: center;
       padding: 120px 20px 60px;
@@ -41,18 +41,15 @@
 
     .hero h1 {
       font-size: 52px;
-      margin-bottom: 10px;
       color: #58a6ff;
-      letter-spacing: 1px;
+      margin-bottom: 10px;
     }
 
     .hero p {
       font-size: 18px;
       color: #aab4c0;
-      margin-bottom: 20px;
     }
 
-    /* subtle divider */
     .divider {
       width: 60px;
       height: 3px;
@@ -61,7 +58,6 @@
       border-radius: 10px;
     }
 
-    /* BUTTON */
     .btn {
       display: inline-block;
       margin-top: 10px;
@@ -75,11 +71,10 @@
     }
 
     .btn:hover {
-      transform: translateY(-2px);
       background: #7bb8ff;
+      transform: translateY(-2px);
     }
 
-    /* ICON STRIP */
     .icon-strip {
       margin-top: 35px;
       display: flex;
@@ -124,6 +119,7 @@
 
     h2 {
       color: #58a6ff;
+      margin-bottom: 20px;
     }
 
     .grid {
@@ -158,6 +154,9 @@
 
 <nav>
   <a href="#about">About</a>
+  <a href="#focus">Focus Areas</a>
+  <a href="#progress">In Progress</a>
+  <a href="#completed">Completed</a>
   <a href="#projects">Projects</a>
 </nav>
 
@@ -204,20 +203,49 @@
 <section id="about">
   <h2>About</h2>
   <p>
-    10+ years in business strategy with hands-on compliance, gap analysis, and structured action planning.
-    Currently focused on Governance, Risk, and Compliance (GRC) and cybersecurity foundations.
+    I bring over 10+ years of experience in business strategy, with hands-on responsibility for maintaining compliance within business operations. This included gap analysis, identifying risks, and developing structured action plans to improve alignment and reduce risk.
   </p>
+  <p>
+    I am currently focused on Governance, Risk, and Compliance (GRC) and building technical foundations in cybersecurity, networking, and security operations.
+  </p>
+</section>
+
+<section id="focus">
+  <h2>Core Focus Areas</h2>
+  <div class="grid">
+    <div class="card">Governance, Risk & Compliance (GRC)</div>
+    <div class="card">Security Operations</div>
+    <div class="card">Networking & Infrastructure</div>
+    <div class="card">Strategy & Analytics</div>
+  </div>
+</section>
+
+<section id="progress">
+  <h2>In Progress</h2>
+  <div class="grid">
+    <div class="card">CompTIA Security+</div>
+    <div class="card">Splunk</div>
+  </div>
+</section>
+
+<section id="completed">
+  <h2>Completed Training</h2>
+  <div class="grid">
+    <div class="card">Google AI Essentials</div>
+    <div class="card">Network Defense</div>
+    <div class="card">Networking Basics</div>
+    <div class="card">Operating Systems</div>
+    <div class="card">Hardware Basics</div>
+  </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
-
   <div class="grid">
     <div class="card">
       <h3>Packet Tracer Labs</h3>
       <a href="https://github.com/IndiaIrene/packet-tracer-labs" target="_blank">View Project</a>
     </div>
-
     <div class="card">
       <h3>GRC Projects</h3>
       <a href="https://github.com/IndiaIrene/grc-projects" target="_blank">View Project</a>
