@@ -1,3 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>India Irene | GRC & Cybersecurity</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f17;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      background: #161b22;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #58a6ff;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      color: #aab4c0;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    /* CARD */
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #222b38;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #58a6ff;
+    }
+
+    /* BUTTON */
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* SKILL BAR */
+    .bar {
+      height: 8px;
+      background: #222b38;
+      border-radius: 10px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .bar div {
+      height: 100%;
+      background: #58a6ff;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #7d8590;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#inprogress">In Progress</a>
+  <a href="#completed">Completed</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+</nav>
+
+<div class="hero">
+  <h1>India Irene</h1>
+  <p>GRC | Cybersecurity | Strategy & Compliance | Risk Management</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    I bring over 10+ years of experience in business strategy and compliance-focused thinking,
+    now applying that foundation to cybersecurity, GRC, and risk management. I focus on aligning
+    strategy with technical implementation through structured frameworks and data-driven insights.
+  </p>
+</section>
+
+<!-- IN PROGRESS -->
+<section id="inprogress">
+  <h2>In Progress</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Security+</h3>
+      <p>Building foundational cybersecurity knowledge aligned with CompTIA Security+ certification.</p>
+    </div>
+
+    <div class="card">
+      <h3>Splunk</h3>
+      <p>Learning SIEM monitoring, log analysis, and security event detection.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPLETED -->
+<section id="completed">
+  <h2>Completed</h2>
+
+  <div class="grid">
+
+    <div class="card">Google AI Essentials</div>
+    <div class="card">Engaging Stakeholders</div>
+    <div class="card">Network Defense</div>
+    <div class="card">Networking Basics</div>
+    <div class="card">Operating Systems Basics</div>
+    <div class="card">Computer Hardware Basics</div>
+    <div class="card">Creating Compelling Reports</div>
+
+  </div>
+</section>
+
+<!-- SKILLS MATRIX -->
 <section id="skills">
   <h2>Skills Matrix</h2>
 
@@ -17,7 +199,7 @@
 
     <div class="card">
       <h3>Networking</h3>
-      <p>Subnetting • Routing • VLANs • Network Design (Packet Tracer)</p>
+      <p>Subnetting • Routing • VLANs • Packet Tracer Labs</p>
       <div class="bar"><div style="width: 75%"></div></div>
     </div>
 
@@ -35,3 +217,35 @@
 
   </div>
 </section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Packet Tracer Labs</h3>
+      <p>Network simulations including VLANs, routing, and subnetting.</p>
+      <a href="https://github.com/IndiaIrene/packet-tracer-labs" target="_blank">
+        View Project
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>GRC Projects</h3>
+      <p>Risk assessments, policy creation, and compliance mapping.</p>
+      <a href="https://github.com/IndiaIrene/grc-projects" target="_blank">
+        View Project
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 India Irene | GRC & Cybersecurity Portfolio
+</footer>
+
+</body>
+</html>
